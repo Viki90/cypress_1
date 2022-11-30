@@ -10,4 +10,10 @@ describe("login test", () => {
         cy.get("#password").type("12341234");
         cy.get("button").click();
     });
+
+    it("logout", () => {
+        // cy.wait(500);
+        cy.get(".nav-link").should("have.length", 4);
+        cy.get('.nav-link').eq(3).click();
+    });
 });
