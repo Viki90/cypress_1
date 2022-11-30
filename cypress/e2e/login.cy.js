@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 describe("login test", () => {
-    it("login with valid credentials", () => {
+    it.only("login with valid credentials", () => {
         cy.visit("https://gallery-app.vivifyideas.com/");
         // cy.get('a[href="/login"]');
         cy.get('a[class="nav-link nav-buttons"]').first().click();
@@ -11,7 +11,7 @@ describe("login test", () => {
         cy.get("button").click();
     });
 
-    it("logout", () => {
+    it.only("logout", () => {
         // cy.wait(500);
         cy.get(".nav-link").should("have.length", 4);
         cy.get('.nav-link').eq(3).click();
