@@ -26,5 +26,6 @@ describe("registration test", () => {
         cy.get("#password-confirmation").type("12341234");
         cy.get('input[type="checkbox"]').check();
         cy.get("button").click();
+        cy.url().should("not.include", "./register");
     });
 });
