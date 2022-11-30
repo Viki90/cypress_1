@@ -2,7 +2,7 @@
 
 describe("login test", () => {
     it.only("login with valid credentials", () => {
-        cy.visit("https://gallery-app.vivifyideas.com/");
+        cy.visit("/");
         // cy.get('a[href="/login"]');
         cy.get('a[class="nav-link nav-buttons"]').first().click();
         // cy.get('input[id="email"]');
