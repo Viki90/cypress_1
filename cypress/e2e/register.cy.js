@@ -12,7 +12,6 @@ describe("registration test", () => {
   }
 
   beforeEach("visit gallery app", () => {
-    console.log("Random Email", randomEmail);
     cy.visit("/");
     cy.get("a[href='/register']").click();
   });
@@ -58,11 +57,11 @@ describe("registration test", () => {
   });
 
   it.only("register with valid data", () => {
-    cy.get(Locators.Register.firstNameInput).type(randomFirstName);
-    cy.get(Locators.Register.lastNameInput).type(randomLastName);
-    cy.get(Locators.SharedElements.emailInput).type(randomEmail);
-    cy.get(Locators.SharedElements.passwordInput).type(randomPassword);
-    cy.get(Locators.Register.passwordConfirmation).type(randomPassword);
+    cy.get(Locators.Register.firstNameInput).type(randomUser.randomFirstName);
+    cy.get(Locators.Register.lastNameInput).type(randomUser.randomLastName);
+    cy.get(Locators.SharedElements.emailInput).type(randomUser.randomEmail);
+    cy.get(Locators.SharedElements.passwordInput).type(randomUser.randomPassword);
+    cy.get(Locators.SharedElements.passwordConfirmation).type(randomUser.randomPassword);
     cy.get(Locators.Register.checkbox).check();
     cy.get(Locators.SharedElements.submitButton).click();
 

@@ -6,12 +6,12 @@
         "registerLink": "a[href='/register']",
         "firstNameInput": "#first-name",
         "lastNameInput": "#last-name",
-        "passwordConfirmation": "#password-confirmation",
         "checkbox": "input[type='checkbox']"
     },
     "SharedElements": {
         "submitButton": "button",
         "emailInput": "#email",
-        "passwordInput": "#password"
+        "passwordInput": "#password",
+        "passwordConfirmation": "#password-confirmation"
     }
 }
