@@ -9,7 +9,7 @@
         "passwordConfirmation": "#password-confirmation",
         "checkbox": "input[type='checkbox']"
     },
-    "Common": {
+    "SharedElements": {
         "submitButton": "button",
         "emailInput": "#email",
         "passwordInput": "#password"

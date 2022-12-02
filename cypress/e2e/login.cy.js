@@ -6,9 +6,9 @@ describe("login test", () => {
     it("login with valid credentials", () => {
         cy.visit("/");
         cy.get(Locators.Login.loginButton).click();
-        cy.get(Locators.Common.emailInput).type("bobolina@gmail.com");
-        cy.get(Locators.Common.passwordInput).type("12341234");
-        cy.get(Locators.Common.submitButton).click();
+        cy.get(Locators.SharedElements.emailInput).type("bobolina@gmail.com");
+        cy.get(Locators.SharedElements.passwordInput).type("12341234");
+        cy.get(Locators.SharedElements.submitButton).click();
     });
 
     it("logout", () => {
