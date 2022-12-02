@@ -23,11 +23,11 @@ describe("registration test", () => {
         cy.get(Locators.Register.registerLink).click();
         cy.get(Locators.Register.firstNameInput).type("Viki");
         cy.get(Locators.Register.lastNameInput).type("Developer");
-        cy.get(Locators.Register.emailField).type(email);
-        cy.get(Locators.Register.passwordField).type("12341234");
+        cy.get(Locators.Common.emailInput).type(email);
+        cy.get(Locators.Common.passwordInput).type("12341234");
         cy.get(Locators.Register.passwordConfirmation).type("12341234");
         cy.get(Locators.Register.checkbox).check();
-        cy.get(Locators.Register.registeButton).click();
+        cy.get(Locators.Common.submitButton).click();
         cy.url().should("not.include", "./register");
     });
 });

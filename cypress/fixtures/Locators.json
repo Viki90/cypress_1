@@ -1,18 +1,17 @@
 {
     "Login": {
-        "loginButton": "a[href='/login']",
-        "emailInput": "#email",
-        "passwordInput": "#password",
-        "submitButton": "button"
+        "loginButton": "a[href='/login']"
     },
     "Register": {
         "registerLink": "a[href='/register']",
         "firstNameInput": "#first-name",
         "lastNameInput": "#last-name",
-        "emailField": "#email",
-        "passwordField": "#password",
         "passwordConfirmation": "#password-confirmation",
-        "checkbox": "input[type='checkbox']",
-        "registeButton": "button"
+        "checkbox": "input[type='checkbox']"
+    },
+    "Common": {
+        "submitButton": "button",
+        "emailInput": "#email",
+        "passwordInput": "#password"
     }
 }
